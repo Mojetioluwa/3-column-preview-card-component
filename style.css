@@ -8,22 +8,18 @@
     --Transparent-white : hsla(0, 0%, 100%, 0.75);
     --Very-light-gray : hsl(0, 0%, 95%);
 }
-/* @media screen and (min-width:375px) { */
-    
-    *{
+
+*{
         padding: 0px;
         margin: 0px;
 		box-sizing: border-box;
 		border: 0px;
 }
 
-body{
-    min-height: 200vh;
-    min-width: 100vw;
-    width: 200px;
-    height: 600px;
-    background-color: var(--Very-light-gray);
-}
+
+
+@media screen and (max-width: 600px) {
+
 
 main{
     margin-top: 20px;
@@ -39,7 +35,9 @@ main{
     background-color: var(--Bright-orange);
     text-align: left;
     padding: 30px;
-    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
 }
 
 #Sedans > h1 {
@@ -96,6 +94,8 @@ main{
     background-color: var(--Very-dark-cyan);
     text-align: left;
     padding: 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 #Luxury > h3 {
@@ -119,20 +119,116 @@ main{
     font-size: 10px;
 }
 
-/* } */
+}
 
-
-/* @media screen and (max-width:1440px) { */
-
-    /* main{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 90px;
-        padding: 0px;
-        border: 0px;
-        width: 200px;
+@media screen and (min-width: 600px){
+    main {
         display: flex;
         justify-content: center;
-    } */
+        width: 600px;
+        margin-top: 40px;
+        margin-left: 150px;
+        margin-bottom: 50px;
+        
+    }
+    
+    /* style for Sedans */
+    #Sedans{
+        background-color: var(--Bright-orange);
+        text-align: left;
+        padding: 30px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    
+    }
+    
+    #Sedans > h1 {
+        color: var(--Very-light-gray);
+        margin-top: 10px;
+    }
+    
+    #Sedans > p {
+        color: var(--Transparent-white);
+        margin-top: 15px;
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+    
+    #Sedans > button {
+        color: var(--Bright-orange);
+        background-color: var(--Very-light-gray);
+        width: 60%;
+        padding: 10px;
+        border-radius: 60px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    
+    /* style for Suvs */
+    #Suvs{
+        background-color: var(--Dark-cyan);
+        text-align: left;
+        padding: 30px;
+    }
+    
+    #Suvs > h2 {
+        color: var(--Very-light-gray);
+        margin-top: 10px;
+    }
+    
+    #Suvs > p {
+        color: var(--Transparent-white);
+        margin-top: 15px;
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+    
+    #Suvs > button {
+        color: var(--Dark-cyan);
+        background-color: var(--Very-light-gray);
+        width: 60%;
+        padding: 10px;
+        border-radius: 60px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    
+    /* style for Luxury */
+    #Luxury{
+        background-color: var(--Very-dark-cyan);
+        text-align: left;
+        padding: 30px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    
+    #Luxury > h3 {
+        color: var(--Very-light-gray);
+        margin-top: 10px;
+    }
+    
+    #Luxury > p {
+        color: var(--Transparent-white);
+        margin-top: 15px;
+        margin-bottom: 55px;
+        font-size: 15px;
+    }
+    
+    #Luxury > button{
+        color: var(--Very-dark-cyan);
+        background-color: var(--Very-light-gray);
+        width: 60%;
+        padding: 10px;
+        border-radius: 60px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    
+    .btn-3:hover {
+        color: var(--Very-light-gray);
+        background-color: var(--Bright-orange);
+    }
 
-/* } */
+ 
+    
+}
